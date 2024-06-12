@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WORLDWIDE TOUNGUES HUB</title>
+    <style>
+        html{scroll-behavior: smooth;font-family: "Noto Sans KR"}
+        .noto-sans {
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400; /* Default weight */
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+        .noto-sans-kr {
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400; /* Default weight */
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh; /* Ensure body takes full viewport height */
+            position: relative; /* Ensure child absolute elements are positioned relative to body */
+        }
+
+        h1 {
+            color: #000000;
+            text-align: center;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 40px;
+            letter-spacing: -0.02em;
+            font-weight: 900;
+            padding-top: 300px;
+            padding-bottom: 70px;
+        }
+        h2 {
+            color: #000000;
+            text-align: center;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 28px;
+            letter-spacing: -0.02em;
+            line-height: 170%;
+            font-weight: 700;
+            padding-top: 100px;
+            padding-bottom: 300px;
+        }
+        p2 {color: #0047FF;
+            text-align: center;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            line-height: 150%;
+            font-weight: 500;
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+        p3 {color: #83FF78;
+            text-align: left;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            line-height: 180%;
+            font-weight: 600;
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }
+        p4 {color: #ffffff;
+            text-align: left;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            line-height: 190%;
+            font-weight: 500;
+            padding-top: 150px;
+            padding-bottom: 180px;
+        }        
+        .highlight{color: #14FF00}
+        .second {box-shadow: 0px 4px #000000 blur}
+        .image-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 90px; /* Set equal spacing between images */
+            margin-top: 30px; /* Adjust this value as needed to control top margin */
+            z-index: 30; list-style-type: none;
+            position: absolute; top: -17px; left: 400px}
+
+        .image-nav img {
+            width: 70px; /* Set a fixed width for each image */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 20px; /* Half of the gap on each side to make the full gap 20px */
+        }
+
+        .image-nav img:hover {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .image-nav img.home:hover {
+            content: url('homehb2.png');
+        }
+
+        .image-nav img.hub1:hover {
+            content: url('hub01hb.png');
+        }
+
+        .image-nav img.hub2:hover {
+            content: url('hub02hb.png');
+        }
+
+        .image-nav img.hub3:hover {
+            content: url('hub03hb.png');
+        }
+
+        .image-nav img.footer:hover {
+            content: url('footerhb2.png');
+        }
+
+        #title {
+            position: absolute;
+            top: 150px; /* Adjust this value to position title.png above worldmap.jpg */
+            z-index: 1; /* Ensure title.png is above worldmap.jpg */
+        }
+
+        ._5-26,
+._5-26 * {
+  box-sizing: border-box;
+}
+._5-26 {
+  background: #ffffff;
+  height: 14420px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+        #home img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding-top: 130px;padding-bottom: 100px;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 100%;
+            height: 1400px;
+        }
+
+        #about img {
+            width: 100%;
+            height: auto;}
+
+        .hub001 {
+          color: #000000;
+          text-align: left;
+          font-size: 38px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          font-weight: 900;
+          position: absolute;
+          left: calc(50% - 634px);
+          top: 72px;
+        }
+        .hub001-2 {
+          color: #000000;
+          text-align: left;
+          font-size: 20px;
+          line-height: 170%;
+          font-weight: 700;
+          position: absolute;
+          left: calc(50% - 219px);
+          top: 78px;
+          width: 870px;
+        }
+        .hub002 {
+          color: #ffffff;
+          text-align: left;
+          font-size: 38px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          font-weight: 900;
+          position: absolute;
+          left: calc(50% - 634px);
+          top: 72px;
+        }
+        .hub002-2 {
+          color: #ffffff;
+          text-align: left;
+          font-size: 20px;
+          line-height: 170%;
+          font-weight: 700;
+          position: absolute;
+          left: calc(50% - 219px);
+          top: 78px;
+          width: 870px;
+        }
+
+        .flex{display:flex;width: 1268px; flex-wrap:wrap; gap: 17px; padding:0px; background: }
+        .flex div{width:32%; overflow: hidden; }
+        .flex div div{width: 100%;height: 366px;
+            transition: background-image 0.3s ease-in-out;}
+
+        .F1{background: url(barbe.jpg); 
+            background-size:cover;}
+        .F2{background: url(baby.jpg); 
+            background-size:cover;}
+        .F3{background: url(mer.jpg); 
+            background-size: cover;}
+        .F4{background: url(elek.jpg); 
+            background-size: cover;}
+        .F5{background: url(sole.jpg); 
+            background-size:cover;}
+        .F6{background: url(girl.jpg); 
+            background-size: cover;}
+        .F7{background: url(unis.jpg); 
+            background-size: cover;}
+        .F8{background: url(kiwi.jpg); 
+            background-size:cover;}
+        .F9{background: url(track.jpg); 
+            background-size: cover;}
+        .F1:hover { background-image: url(barbe2.jpg); }
+        .F2:hover { background-image: url(baby2.jpg); }
+        .F3:hover { background-image: url(mer2.jpg); }
+        .F4:hover { background-image: url(elek2.jpg); }
+        .F5:hover { background-image: url(sole2.jpg); }
+        .F6:hover { background-image: url(girl2.jpg); }
+        .F7:hover { background-image: url(unis2.jpg); }
+        .F8:hover { background-image: url(kiwi2.jpg); }
+        .F9:hover { background-image: url(track2.jpg); }
+
+        .imessage,
+        .imessage * {
+          box-sizing: border-box;
+        }
+        .group-931 {
+          position: absolute;
+          inset: 0;
+        }
+
+        .korean-3 {
+          width: 335px;
+          height: 113px;
+          position: absolute;
+          left: 330px;
+          top: 5766px;
+          object-fit: cover;          z-index: 50;
+        }
+        .korean-2-1 {
+          width: 590px;
+          height: 172px;
+          position: absolute;
+          left: 808px;
+          top: 5879px;
+          object-fit: cover;          z-index: 50;
+        }
+        .mateo-3 {
+          width: 291px;
+          height: 115px;
+          position: absolute;
+          left: 330px;
+          top: 6071px;
+          object-fit: cover;          z-index: 50;
+        }
+        .mateo-2-1 {
+          width: 686px;
+          height: 171px;
+          position: absolute;
+          left: 712px;
+          top: 6184px;
+          object-fit: cover;          z-index: 50;
+        }
+        ._5552-1 {
+          width: 753px;
+          height: 173px;
+          position: absolute;
+          left: 645px;
+          top: 6791px;
+          object-fit: cover;          z-index: 50;
+        }
+        .fatima-2-1 {
+          width: 595px;
+          height: 171px;
+          position: absolute;
+          left: 803px;
+          top: 6489px;
+          object-fit: cover;          z-index: 50;
+        }
+        .japan-2-1 {
+          width: 650px;
+          height: 172px;
+          position: absolute;
+          left: 748px;
+          top: 7096px;
+          object-fit: cover;          z-index: 50;
+        }
+        .japan-3 {
+          width: 311px;
+          height: 113px;
+          position: absolute;
+          left: 330px;
+          top: 6986px;
+          objectfit: cover;          z-index: 50;
+        }
+        .fatima-3 {
+          width: 246px;
+          height: 113px;
+          position: absolute;
+          left: 331px;
+          top: 6376px;
+          object-fit: cover;          z-index: 50;
+        }
+        ._555-556 {
+          width: 277px;
+          height: 113px;
+          position: absolute;
+          left: 330px;
+          top: 6681px;
+          object-fit: cover;          z-index: 50;
+        }
+        .frame-49,
+        .frame-49 * {
+          box-sizing: border-box;
+        }
+        .frame-49 {
+          background: black;
+          height: 1429px;
+          position: relative;
+          overflow: hidden;
+        }
+        .group-933 {
+          position: absolute;
+          inset: 0;
+        }
+        .group-842 {
+          width: 437px;
+          height: 403px;
+          position: static;
+        }
+        .rectangle-430 {
+          background: #d9d9d9;
+          width: 411px;
+          height: 363px;
+          position: absolute;
+          left: 1148px;
+          top: 419px;
+        }
+.rectangle-417 {
+          background-color: #14FF00;
+          width: 411px;
+          height: 364px;
+          position: absolute;
+          right: 169px;
+          top: 419px;
+          padding: 20px; /* 박스의 내부 여백 설정 */
+          overflow-y: scroll;   /* 세로 스크롤 설정 */
+        }
+.rectangle-417 p{
+          margin: 0; line-height: 1.9; 
+          color: #0047FF;
+            text-align: left;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            font-weight: 500;
+            z-index: 20;
+            position: relative;
+        }
+
+        .rectangle-428 {
+          background-color: #14ff00;
+          width: 47px;
+          height: 37px;
+          position: absolute;
+          left: 1122px;
+          top: 382px;
+        }
+        ._03 {
+          color: #0047ff;
+          text-align: left;
+          font-size: 30px;
+          letter-spacing: -0.05em;
+          font-weight: 400;
+          position: absolute;
+          left: 1130px;
+          top: 380px;
+        }
+        .rectangle-429 {
+          background: #0047ff;
+          width: 55px;
+          height: 37px;
+          position: absolute;
+          left: 1169px;
+          top: 382px;
+        }
+        .div {
+          color: #14ff00;
+          text-align: left;
+          font-size: 25px;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+          position: absolute;
+          left: 1174px;
+          top: 381px;
+        }
+        .group-934 {
+          position: absolute;
+          inset: 0;
+        }
+        .rectangle-4302 {
+          background: #d9d9d9;
+          width: 411px;
+          height: 363px;
+          position: absolute;
+          left: 671px;
+          top: 781px;
+        }
+        .rectangle-4172 {
+          background: #14ff00;
+          width: 411px;
+          height: 364px;
+          position: absolute;
+          right: 646px;
+          top: 781px;
+          padding: 20px; /* 박스의 내부 여백 설정 */
+          overflow-y: scroll; 
+        }
+.rectangle-4172 p{
+          margin: 0; line-height: 1.9; 
+          color: #0047FF;
+            text-align: left;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            font-weight: 500;
+            z-index: 20;
+            position: relative;
+        }
+        .rectangle-4282 {
+          background: #14ff00;
+          width: 47px;
+          height: 37px;
+          position: absolute;
+          left: 645px;
+          top: 744px;
+        }
+        ._05 {
+          color: #0047ff;
+          text-align: left;
+          font-size: 30px;
+          letter-spacing: -0.05em;
+          font-weight: 400;
+          position: absolute;
+          left: 653px;
+          top: 743px;
+        }
+        .rectangle-4292 {
+          background: #0047ff;
+          width: 128px;
+          height: 37px;
+          position: absolute;
+          left: 692px;
+          top: 744px;
+        }
+        .div2 {
+          color: #14ff00;
+          text-align: left;
+          font-size: 25px;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+          position: absolute;
+          left: 697px;
+          top: 743px;
+        }
+        .group-935 {
+          position: absolute;
+          inset: 0;
+        }
+        .rectangle-4303 {
+          background: #d9d9d9;
+          width: 411px;
+          height: 363px;
+          position: absolute;
+          left: 1148px;
+          top: 915px;
+        }
+        .rectangle-4173 {
+          background: #14ff00;
+          width: 411px;
+          height: 364px;
+          position: absolute;
+          right: 169px;
+          top: 915px;
+          padding: 20px; /* 박스의 내부 여백 설정 */
+          overflow-y: scroll; 
+        }
+.rectangle-4173 p{
+          margin: 0; line-height: 1.9; 
+          color: #0047FF;
+            text-align: left;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            font-weight: 500;
+            z-index: 20;
+            position: relative;
+        }
+        .rectangle-4283 {
+          background: #14ff00;
+          width: 47px;
+          height: 37px;
+          position: absolute;
+          left: 1122px;
+          top: 878px;
+        }
+        ._06 {
+          color: #0047ff;
+          text-align: left;
+          font-family: "NotoSans-DisplayMedium", sans-serif;
+          font-size: 30px;
+          letter-spacing: -0.05em;
+          font-weight: 400;
+          position: absolute;
+          left: 1130px;
+          top: 881px;
+        }
+        .rectangle-4293 {
+          background: #0047ff;
+          width: 146px;
+          height: 37px;
+          position: absolute;
+          left: 1169px;
+          top: 878px;
+        }
+        .div3 {
+          color: #14ff00;
+          text-align: left;
+          font-family: "NotoSansKr-Medium", sans-serif;
+          font-size: 25px;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+          position: absolute;
+          left: 1174px;
+          top: 877px;
+        }
+        .group-936 {
+          position: absolute;
+          inset: 0;
+        }
+        .rectangle-4304 {
+          background: #d9d9d9;
+          width: 411px;
+          height: 363px;
+          position: absolute;
+          left: 194px;
+          top: 174px;
+        }
+        .rectangle-4174 {
+          background: #14ff00;
+          width: 411px;
+          height: 364px;
+          position: absolute;
+          right: 1123px;
+          top: 174px;
+          padding: 20px; /* 박스의 내부 여백 설정 */
+          overflow-y: scroll;           
+        }
+.rectangle-4174 p{
+          margin: 0; line-height: 1.9; 
+          color: #0047FF;
+            text-align: left;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            font-weight: 500;
+            z-index: 20;
+            position: relative;
+        }
+        .rectangle-4284 {
+          background: #14ff00;
+          width: 47px;
+          height: 37px;
+          position: absolute;
+          left: 168px;
+          top: 137px;
+        }
+        ._01 {
+          color: #0047ff;
+          text-align: left;
+          font-family: "NotoSans-DisplayMedium", sans-serif;
+          font-size: 30px;
+          letter-spacing: -0.05em;
+          font-weight: 400;
+          position: absolute;
+          left: 176px;
+          top: 140px;
+        }
+        .rectangle-4294 {
+          background: #0047ff;
+          width: 176px;
+          height: 37px;
+          position: absolute;
+          left: 215px;
+          top: 137px;
+        }
+        .div4 {
+          color: #14ff00;
+          text-align: left;
+          font-family: "NotoSansKr-Medium", sans-serif;
+          font-size: 25px;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+          position: absolute;
+          left: 220px;
+          top: 136px;
+        }
+        .group-937 {
+          position: absolute;
+          inset: 0;
+        }
+        .rectangle-4305 {
+          background: #d9d9d9;
+          width: 411px;
+          height: 363px;
+          position: absolute;
+          left: 671px;
+          top: 296px;
+        }
+        .rectangle-4175 {
+          background: #14ff00;
+          width: 411px;
+          height: 364px;
+          position: absolute;
+          right: 646px;
+          top: 296px;
+          padding: 20px; /* 박스의 내부 여백 설정 */
+          overflow-y: scroll;           
+        }
+.rectangle-4175 p{
+          margin: 0; line-height: 1.9; 
+          color: #0047FF;
+            text-align: left;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            font-weight: 500;
+            z-index: 20;
+            position: relative;
+        }
+        .rectangle-4285 {
+          background: #14ff00;
+          width: 47px;
+          height: 37px;
+          position: absolute;
+          left: 645px;
+          top: 259px;
+        }
+        ._02 {
+          color: #0047ff;
+          text-align: left;
+          font-family: "NotoSans-DisplayMedium", sans-serif;
+          font-size: 30px;
+          letter-spacing: -0.05em;
+          font-weight: 400;
+          position: absolute;
+          left: 653px;
+          top: 262px;
+        }
+        .rectangle-4295 {
+          background: #0047ff;
+          width: 149px;
+          height: 37px;
+          position: absolute;
+          left: 692px;
+          top: 259px;
+        }
+        .div5 {
+          color: #14ff00;
+          text-align: left;
+          font-family: "NotoSansKr-Medium", sans-serif;
+          font-size: 25px;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+          position: absolute;
+          left: 697px;
+          top: 258px;
+        }
+        .group-938 {
+          position: absolute;
+          inset: 0;
+        }
+        .rectangle-4306 {
+          background: #d9d9d9;
+          width: 411px;
+          height: 363px;
+          position: absolute;
+          left: 194px;
+          top: 659px;
+        }
+        .rectangle-4176 {
+          background: #14ff00;
+          width: 411px;
+          height: 364px;
+          position: absolute;
+          right: 1123px;
+          top: 659px;
+          padding: 20px; /* 박스의 내부 여백 설정 */
+          overflow-y: scroll;           
+        }
+.rectangle-4176 p{
+          margin: 0; line-height: 1.9; 
+          color: #0047FF;
+            text-align: left;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+            font-weight: 500;
+            z-index: 20;
+            position: relative;
+        }
+        .rectangle-4286 {
+          background: #14ff00;
+          width: 47px;
+          height: 37px;
+          position: absolute;
+          left: 168px;
+          top: 622px;
+        }
+        ._04 {
+          color: #0047ff;
+          text-align: left;
+          font-family: "NotoSans-DisplayMedium", sans-serif;
+          font-size: 30px;
+          letter-spacing: -0.05em;
+          font-weight: 400;
+          position: absolute;
+          left: 176px;
+          top: 625px;
+        }
+        .rectangle-4296 {
+          background: #0047ff;
+          width: 110px;
+          height: 37px;
+          position: absolute;
+          left: 215px;
+          top: 622px;
+        }
+        .ng {
+          color: #14ff00;
+          text-align: left;
+          font-family: "NotoSansKr-Medium", sans-serif;
+          font-size: 25px;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+          position: absolute;
+          left: 220px;
+          top: 621px;
+        }
+        .group-939 {
+          position: absolute;
+          inset: 0;
+        }
+        .group-940 {
+          position: absolute;
+          inset: 0;
+        }
+        .group-941 {
+          position: absolute;
+          inset: 0;
+        }
+        .group-942 {
+          position: absolute;
+          inset: 0;
+        }
+        .group-943 {
+          position: absolute;
+          inset: 0;
+        }
+        .group-944 {
+          position: absolute;
+          inset: 0;
+        }
+
+/* 체크박스 숨기기 */
+        #toggle-checkbox {
+            display: none;
+        }
+
+        /* 이미지 토글 레이블 스타일 */
+        #toggle-label {
+            cursor: pointer;
+        }
+
+        /* 이미지 2 기본 표시 설정 */
+        #image2 {
+            opacity: 0; /* 초기에는 투명하게 */
+            transition: opacity 0.5s ease-in-out; /* 부드러운 페이드 인/아웃 애니메이션 적용 */
+        }
+
+        /* 체크박스가 체크되었을 때 이미지 2가 나타나도록 설정 */
+        #toggle-checkbox:checked + #toggle-label + #image2 {
+            opacity: 1; /* 투명도를 1로 변경하여 나타나게 함 */
+        }
+
+/* 체크박스 숨기기 -2- */
+        #toggle-checkbox2 {
+            display: none;
+        }
+
+        /* 이미지 토글 레이블 스타일 */
+        #toggle-label2 {
+            cursor: pointer;
+        }
+
+        /* 이미지 4 기본 표시 설정 */
+        #image4 {
+            opacity: 0; /* 초기에는 투명하게 */
+            transition: opacity 0.5s ease-in-out; /* 부드러운 페이드 인/아웃 애니메이션 적용 */
+        }
+
+        /* 체크박스가 체크되었을 때 이미지 4가 나타나도록 설정 */
+        #toggle-checkbox2:checked + #toggle-label2 + #image4 {
+            opacity: 1; /* 투명도를 1로 변경하여 나타나게 함 */
+        }
+
+/* 체크박스 숨기기 -3- */
+        #toggle-checkbox3 {
+            display: none;
+        }
+
+        /* 이미지 토글 레이블 스타일 */
+        #toggle-label3 {
+            cursor: pointer;
+        }
+
+        /* 이미지 4 기본 표시 설정 */
+        #image6 {
+            opacity: 0; /* 초기에는 투명하게 */
+            transition: opacity 0.5s ease-in-out; /* 부드러운 페이드 인/아웃 애니메이션 적용 */
+        }
+
+        /* 체크박스가 체크되었을 때 이미지 4가 나타나도록 설정 */
+        #toggle-checkbox3:checked + #toggle-label3 + #image6 {
+            opacity: 1; /* 투명도를 1로 변경하여 나타나게 함 */
+        }
+/* 체크박스 숨기기 -4- */
+        #toggle-checkbox4 {
+            display: none;
+        }
+
+        /* 이미지 토글 레이블 스타일 */
+        #toggle-label4 {
+            cursor: pointer;
+        }
+
+        /* 이미지 4 기본 표시 설정 */
+        #image8 {
+            opacity: 0; /* 초기에는 투명하게 */
+            transition: opacity 0.5s ease-in-out; /* 부드러운 페이드 인/아웃 애니메이션 적용 */
+        }
+
+        /* 체크박스가 체크되었을 때 이미지 4가 나타나도록 설정 */
+        #toggle-checkbox4:checked + #toggle-label4 + #image8 {
+            opacity: 1; /* 투명도를 1로 변경하여 나타나게 함 */
+        }
+/* 체크박스 숨기기 -5- */
+        #toggle-checkbox5 {
+            display: none;
+        }
+
+        /* 이미지 토글 레이블 스타일 */
+        #toggle-label5 {
+            cursor: pointer;
+        }
+
+        /* 이미지 4 기본 표시 설정 */
+        #image10 {
+            opacity: 0; /* 초기에는 투명하게 */
+            transition: opacity 0.5s ease-in-out; /* 부드러운 페이드 인/아웃 애니메이션 적용 */
+        }
+
+        /* 체크박스가 체크되었을 때 이미지 4가 나타나도록 설정 */
+        #toggle-checkbox5:checked + #toggle-label5 + #image10 {
+            opacity: 1; /* 투명도를 1로 변경하여 나타나게 함 */
+        }
+
+        .scroll-container-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+.wrap2{width: 1728px; margin: auto;}
+
+.b-hover img:hover {
+            transition: all 0.3s ease-in-out;}
+.b-hover img.b1:hover {
+            content: url('bhb1.png');
+          }
+
+        .b1:hover { background-image: url(germany.png); }
+        .b2:hover { background-image: url(nihongo.png); }
+        .b3:hover { background-image: url(melayu.png); }
+        .b4:hover { background-image: url(bhb1.png); }
+        .b5:hover { background-image: url(bhb2.png); }
+        .b6:hover { background-image: url(bhb3.png); }
+        .b7:hover { background-image: url(bhb4.png); }
+        .b8:hover { background-image: url(bhb5.png); }
+        .b9:hover { background-image: url(bhb6.png); }
+
+    </style>
+</head>
+<body>
+     <div style="width: 100%; height: 100px;background-color: #0148FF;">
+      <nav class="image-nav">
+        <li><a href="#home">
+        <img src="home2.png" alt="home2" class="home">
+        </a></li>
+        <li><a href="#hub01">
+        <img src="hub01.png" alt="hub1" class="hub1">
+        </a></li>
+        <li><a href="#hub02">
+        <img src="hub02.png" alt="hub02" class="hub2">
+        </a></li>
+        <li><a href="#hub03">
+        <img src="hub03.png" alt="hub3" class="hub3">
+        </a></li>
+        <li><a href="#footer">
+        <img src="footer.png" alt="footer" class="footer">
+        </a></li>
+      </nav>
+      </div>
+  <div class="b-hover">
+    <div class="b1">
+  <img src="b1.png" alt="b1" style="position: absolute;left: 64px;
+  top: 373px;; z-index: 31;width: 90px;height: 90px;">
+  </div>
+  <div class="b2">
+  <img src="b2.png" alt="b2" style="position: absolute;left: left: 191px;
+  top: 522px;; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b3">
+  <img src="b3.png" alt="b3" style="position: absolute;left: 405px;
+  top: 795px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b4">
+  <img src="b4.png" alt="b4" style="position: absolute;left: 780px;
+  top: 578px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b5">
+  <img src="b5.png" alt="b5" style="position: absolute;left: 700px;
+  top: 409px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b6">
+  <img src="b6.png" alt="b6" style="position: absolute;left: 673px;
+  top: 331px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b7">
+  <img src="b7.png" alt="b7" style="position: absolute;left: 506px;
+  top: 694px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b8">
+  <img src="b8.png" alt="b8" style="position: absolute;left: 794px;
+  top: 821px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b9">
+  <img src="b9.png" alt="b9" style="position: absolute;  left: 139px;
+  top: 616px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b10">
+  <img src="b10.png" alt="b10" style="position: absolute;left: 1136px;
+  top: 374px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b11">
+  <img src="b11.png" alt="b13" style="position: absolute;left: 1260px;
+  top: 520px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b12">
+  <img src="b12.png" alt="b12" style="position: absolute;left: 1449px;
+  top: 447px; z-index: 31;width: 90px;height: 90px;">
+</div>
+<div class="b13">
+  <img src="b13.png" alt="b13" style="position: absolute;left: 1500px;
+  top: 489px; z-index: 31;width: 90px;height: 90px;">
+  <img src="b14.png" alt="b14" style="position: absolute;left: 743px;
+  top: 377px; z-index: 31;width: 90px;height: 90px;">
+  <img src="b15.png" alt="b15" style="position: absolute;left: 1421px;
+  top: 910px; z-index: 31;width: 90px;height: 90px;">
+  <img src="b16.png" alt="b16" style="position: absolute;left: 1164px;
+  top: 693px; z-index: 31;width: 90px;height: 90px;">
+  <img src="b17.png" alt="b17" style="position: absolute;left: 322px;
+  top: 437px; z-index: 31;width: 90px;height: 90px;">
+  <img src="b18.png" alt="b18" style="position: absolute;left: 1325px;
+  top: 795px; z-index: 31;width: 90px;height: 90px;">
+</div>
+</div>
+
+    <section id="home">
+        <img src="top2.jpg" alt="top2" style="padding-top:0px">
+    </section>
+    <section id="about">
+        <h1>언어는 세계를 만든다.</h1>
+        <img src="intro.jpg" alt="intro">
+        <h2>지구에서는 약 6000여개의 언어가 쓰이고 있으며,<br>각각의 언어들은 고유한 특성을 가진다.<br>세계에 존재하는 특이한 말들과 재미있는 특징을 알아보자.</h2>
+    </section>
+    <section id="hub01" style="padding-top: 100px;justify-content: center; align-items: center">
+    <div class="first" style="background-color: #14ff00; width: 1728px; height: 160px; position: relative; padding-top: 100px;">
+    <div class="hub001">독일어와 프랑스어의<br>명사의 성(性)</div>
+    <div class="hub001-2">독일어, 프랑스어의 명사들은 남성, 여성, 혹은 중성의 성별을 가진다. 명사가 성별을 가진다니?<br>어떤 기준으로 성별이 정해지는 걸까? 생김새? 느낌? 아래의 단어들이 어떤 성별을 가질지 유추해보자.<br>사진 위에 마우스를 올리면 답을 확인할 수 있다.</div>
+</div>
+</div>
+<div style="width:100%; height: 2200px;background-color: black;            display: flex; flex-direction: column; align-items: center">
+  <p2>여성명사일까, 남성명사일까? <br>* 사진 위에 마우스를 올리면 답을 확인할 수 있다.</p2>  
+    <div class="wrap">
+    <div class="flex">
+        <div>
+            <div class="F1"></div>
+        </div>
+        <div>
+            <div class="F2"></div>
+        </div>
+        <div>
+            <div class="F3"></div>
+        </div>
+    </div>
+    </div>
+    <br>
+       <div class="wrap">
+    <div class="flex">
+        <div>
+            <div class="F4"></div>
+        </div>
+        <div>
+            <div class="F5"></div>
+        </div>
+        <div>
+            <div class="F6"></div>
+        </div>
+    </div>
+    </div>
+    <br>
+       <div class="wrap">
+    <div class="flex">
+        <div>
+            <div class="F7"></div>
+        </div>
+        <div>
+            <div class="F8"></div>
+        </div>
+        <div>
+            <div class="F9"></div>
+        </div>
+    </div>
+    </div>
+    <br>
+        <p3>명사의 성은 문법적으로 명사를 분류하는 방식이다. 그렇기에 명사의 성질에 영향을 받지 않으며, 성질을 부여하지도 않는다. 다만 명사의 성별에 따라 관사를<br> 다르게 사용하며, 문장구성 또한 변화하기 때문에 유럽어를 공부할 때에 중요한 부분이다.<br><br><brspan class="highlight">마크 트웨인은 저서 "The Awful German Language" 에서 이렇게 말했다.</span><br><br>“독일어에서 모든 명사는 성性 을 지니고 있으며, 그 성이 분배되는 방식에는 어떠한 논리나 시스템이 존재하지 않는다. 따라서 모든 명사의 성은 각각 따로 <br>
+    외워져야 하며, 그 외의 방법은 존재하지 않는다. 이렇게 명사의 성을 외우기 위해서는 비망록과 같은 기억력을 필요로 한다. 독일어에서 소녀는 중성의 존재인 <br>
+    반면 순무는 성을 가지고 있다. <span class="highlight">생각해보아라. 독일어가 보여주는 순무에 대한 경외심과 소녀에 대한 냉담한 무례를!”</span></p3>
+</div>
+    </section>
+<section id="hub02" style=";justify-content: center; align-items: center;">
+    <div class="second" style="background-color: #0047FF; color: white;width: 1728px; height: 160px; position: relative; padding-top: 100px;">
+    <div class="hub001" style="color:white;">언어별<br>웃음소리 텍스트</div>
+    <div class="hub001-2"style="color:white;">언어는 입으로만 표현되지 않는다.  손으로 입력된 텍스트로 언어는 또 다른 느낌을 가지기도 한다.<br>특히 웃음소리는 각 언어의 특성을 흥미롭게 보여준다. 아래의 웃음 텍스트들은 어떤 언어의 것일까?<br>웃음 텍스트들을 클릭하여 확인할 수 있다.</div>
+</div>
+<img src="im.svg" alt="im" style="width: 100% ; height: auto;">
+    <div class="iMessage">
+<div>
+    <!-- 이미지 토글 체크박스1 -->
+    <input type="checkbox" id="toggle-checkbox">
+    <!-- 이미지 토글 레이블 -->
+    <label for="toggle-checkbox" id="toggle-label">
+    <img class="korean-3" src="korean.png" alt="korean">
+    </label>
+    <!-- 이미지 2 -->
+    <img class="korean-2-1" id="image2" src="korean2.png" alt="korean2">
+</div>
+<div>
+    <!-- 이미지 토글 체크박스2 -->
+    <input type="checkbox" id="toggle-checkbox2">
+    <!-- 이미지 토글 레이블 -->
+    <label for="toggle-checkbox2" id="toggle-label2">
+      <img class="mateo-3" src="mateo.png" alt="mateo">
+    </label>
+    <!-- 이미지 4 -->
+      <img class="mateo-2-1" id="image4" src="mateo2.png" alt="mateo2">
+</div>
+<div>
+      <!-- 이미지 토글 체크박스3 -->
+    <input type="checkbox" id="toggle-checkbox3">
+    <!-- 이미지 토글 레이블 -->
+    <label for="toggle-checkbox3" id="toggle-label3">
+      <img class="fatima-3" src="fatima.png" alt="fatima">
+    </label>
+    <!-- 이미지 6 -->
+      <img class="fatima-2-1" id="image6" src="fatima2.png" alt="fatima2">
+</div>
+<div>
+      <!-- 이미지 토글 체크박스4 -->
+    <input type="checkbox" id="toggle-checkbox4">
+    <!-- 이미지 토글 레이블 -->
+    <label for="toggle-checkbox4" id="toggle-label4">
+      <img class="_555-556" src="555.png" alt="555">
+    </label>
+    <!-- 이미지 8 -->
+      <img class="_5552-1" id="image8" src="5552.png" alt="5552">
+</div>
+<div>
+      <!-- 이미지 토글 체크박스5 -->
+    <input type="checkbox" id="toggle-checkbox5">
+    <!-- 이미지 토글 레이블 -->
+    <label for="toggle-checkbox5" id="toggle-label5">
+      <img class="japan-3" src="japan.png" alt="japan">
+    </label>
+    <!-- 이미지 8 -->
+      <img class="japan-2-1" id="image10" src="japan2.png" alt="japan2">
+</div>
+
+
+
+    </div>
+</div>
+</section>
+<section id="hub03" style=";justify-content: center; align-items: center;">
+<div style="background-color: #14FF00; color: black;width: 1728px; height: 160px; position: relative; padding-top: 10px;padding-bottom: 100px;">
+    <div class="hub001">독일어는 왜 특이할까?</div>
+    <div class="hub001-2">독일에서는 독일어에 대해 이렇게 농담하곤 한다. “deutsche Sprache, schwere Sprache”<br>독일의 언어는 어려운 언어라는 뜻이다.  가스통 도렌은 저서  <바벨>에서 독일어가 가지는 언어적 특징을<br> 6개로 분류했다. 이러한 특징들 때문에 독일어가 어렵고 예외적으로 느껴진다는 것이다.</div>
+</div>
+<div style="width: 1728px;height: 1429px;background-color: black; padding-bottom: 100px;padding-top: 100px;">
+<div class="frame-49">
+  <div class="group-842">
+    <div class="rectangle-430"></div>
+    <div class="rectangle-417">
+      <p>독일어에서 동사의 주어는 명사나 대명사를 사용해서 언제나 반드시 명시적으로 밝혀야 한다. 명사는 대명사로 대체할 수 있지만 생략할 수는 없다. 명령문이나 대화체에서만 예외적으로 생략 가능하다. 예를 들어, “ja, komm schon” (응, 가고 있어)는 “ja, ich komme schon (응, '내가' 가고 있어)를짧게 그리고 매우 비격식적으로 말하는 표현이다. 전 세계적으로 볼 때 이렇게 명사나 대명사를 의무적으로 사용하도록 하는 것은 보기 드문 현상이다. 대부분의 언어들은 대명사를 직접 표현하지 않고 암시하거나 아니면 동사에 통합시키는것을 아무렇지도 않게 생각하기 때문이다. 독일어는 여기에서 또 다시 괴짜언어적 특성을 가진다. 그리고 영어도 그렇다.</p>
+      </div>
+    <div class="rectangle-428"></div>
+    <div class="_03">03</div>
+    <div class="rectangle-429"></div>
+    <div class="div">주어</div>
+  <div class="rectangle-4302"></div>
+  <div class="rectangle-4172"></div>
+  <div class="rectangle-4282"></div>
+  <div class="_05">05</div>
+  <div class="rectangle-4292"></div>
+  <div class="div2">복잡한 어순</div>
+  <div class="rectangle-4303"></div>
+  <div class="rectangle-4173"></div>
+  <div class="rectangle-4283"></div>
+  <div class="_06">06</div>
+  <div class="rectangle-4293"></div>
+  <div class="div3">부정어의 위치</div>
+  <div class="rectangle-4304"></div>
+  <div class="rectangle-4174">      
+    <p>독일어에서는 평서문을 의문문으로 만들 때 일반적으로 주어와 동사의 순서를 뒤집는다. ‘Wir trinken Bier(우리는 맥주를 마신다)’와 같은 평서문이 
+의문문이 되면 주어 wir와 동사 trinken의 순서를 바꿔서 Trinken wir Bier?가 된다. 이 문장을 
+영어로 'We are drinking beer(우리가 맥주를 
+마시고 있다)'라고 번역한다면, 이런 방식으로 
+의문문 을 만드는 것은 영어 사용자에게 매우 익숙한 일이다. 영어도 똑같이 주어와 동사를 바꾸어 'Are we drinking beer?'라고 의문문을 만들 기 때문이다. 그러나 앞의 독일어 문장은 영어로 We drink beer(우리 가 맥주를 마신다)라고 번역할 수도 있다. 그런데 이 영어 문장의 의문문 은 Drink we beer?'가 아니라 'Do we drink beer?'다. 만일 영어 사용자가 주어 we와 동사 drink의 순서를 바꿔서 'Drink we beer?' 라고 말한다면 다른 사람들이 억양이나 상황을 파악해 그 의미를 이해 는 하겠지만, 매우 이상하게 쳐다볼 것이다.</p> </div>
+  <div class="rectangle-4284"></div>
+  <div class="_01">01</div>
+  <div class="rectangle-4294"></div>
+  <div class="div4">예/아니오 의문문</div>
+  <div class="rectangle-4305"></div>
+  <div class="rectangle-4175"></div>
+  <div class="rectangle-4285"></div>
+  <div class="_02">02</div>
+  <div class="rectangle-4295"></div>
+  <div class="div5">희귀한 자음들</div>
+  <div class="rectangle-4306"></div>
+  <div class="rectangle-4176"></div>
+  <div class="rectangle-4286"></div>
+  <div class="_04">04</div>
+  <div class="rectangle-4296"></div>
+  <div class="ng">/ng/ 발음</div>
+  <div class="group-842">
+    <div class="rectangle-430"></div>
+    <div class="rectangle-417"></div>
+    <div class="rectangle-428"></div>
+    <div class="_03">03</div>
+    <div class="rectangle-429"></div>
+    <div class="div">주어</div>
+  </div>
+  <div class="rectangle-4302"></div>
+  <div class="rectangle-4172">
+    <p>독일어가 괴짜 지수 목록에서 열번째 자리에 오르게 하는 데 큰 역할을 한 것은 바로 어순에 대한 복잡한 규칙들이다. 만일 어떤 주절main clause이 주어로 시작하지 않으면, 주어를 첫 번째 동사 다음으로 미룬다. 그러므로 “Ich sehe sie'(나는 그녀를 본다)는 주어-동사-목적어 순이지만, 예를 들어 이 문장을 'dort'(거기에서)라는 단어로 시작하는 "Dort sehe ich sie"(나는 거기에서 그녀를 본다) 처럼 주어와 동사의 순서가 뒤바뀐다. 그리고 여기 에서 끝이 아니다. 종속절은 또 다르기 때문이다. 종속절에서 동사는 문장의 제일 마지막에 위치한다.  예를 들어 "Tch denke, dass ich sie dort sehe" (나는 거기에서 그녀를 볼 수 있을 것이라고 생각한다)라는 문장에서 종속절인 'dass ich sie dort sehe'는 동사인 sehe(본다)로 마무리된다. 이것이 혼란스럽게 보일 수도 있겠지만 사실은 엄격한 규칙을 따른 것이다. 반면, 영어는 아주 흔한 어순인 주어-동사-목적어 어순을 사용한다.</p>
+  </div>
+  <div class="rectangle-4282"></div>
+  <div class="_05">05</div>
+  <div class="rectangle-4292"></div>
+  <div class="div2">복잡한 어순</div>
+  <div class="rectangle-4303"></div>
+  <div class="rectangle-4173">
+    <p>약간 불공평하지만 스노블렌은 '부정의 위치'라는 특징도 포함시켰다. 즉, 영어로 치자면 문장의 어느 위치에 ‘not(~아니다)'이라는 단어를 놓느냐에 대한 것이다.독일어는 영어의 not에 해당하는 단어인 nicht를 거의 목적어처럼 취급한다(사실 예전에는 목적어였다). 게다가 이 부정어의 위치는 문장에따라 이리저리 바뀌기 때문에 이 부문에서 특이한 점을 가진다. 이 특징이 포함된 것이 불공평하다고 느끼는 이유는 이것이 앞서 언급한 6번째의 복잡한 어순이라는 특징과 명백한 연관관계가 있기 때문이다. 변호사들이 '이중처벌'이라고 할 만한 경우라 하겠다.</p>
+  </div>
+  <div class="rectangle-4283"></div>
+  <div class="_06">06</div>
+  <div class="rectangle-4293"></div>
+  <div class="div3">부정어의 위치</div>
+  <div class="rectangle-4304"></div>
+  <div class="rectangle-4174"></div>
+  <div class="rectangle-4284"></div>
+  <div class="_01">01</div>
+  <div class="rectangle-4294"></div>
+  <div class="div4">예/아니오 의문문</div>
+  <div class="rectangle-4305"></div>
+  <div class="rectangle-4175"><p>혀 뒤쪽을 구개수, 즉 입천장 뒤쪽에서 흔들리는 작은 살덩어리, 즉 목 것에 가까이해서 소리를 내는 자음을 가지고 있는 언어는 거의 없다. 그리고 그런 소리를 가지고 있다 하더라도 보통은 파열음이며(/t/나 /p/가 파열음이다), /s/나 /n/ 같은 지속음이 아니다. 바흐(Bach)의 이름에 들어 있는 /kh/ 소리 덕분에, 독일어는 희귀한 발음의 자음을 가지게 된다. 567개의 언어 중에서 오직 11개의 언어만이 구개수 근처에서 소리가 나는 지속음을 가지고 있다. 영어 역시 씬(thin)이나 디스(this)에 들어있는 /th/ 소리 덕분에 희귀한 자음을 가진 것으로 판단된다.</p></div>
+  <div class="rectangle-4285"></div>
+  <div class="_02">02</div>
+  <div class="rectangle-4295"></div>
+  <div class="div5">희귀한 자음들</div>
+  <div class="rectangle-4306"></div>
+  <div class="rectangle-4176">
+    <p>독일어 단어에는 ng/ 소리가 단어의 중간이나 끝에는 올 수 있지만 처음에는 올 수 없다. 예를 들어 링 Ring(반지), 앙스트 Angir(불안), 핑어 Finger (손가락)는 가능하지만, 브라트부르스트Bratwurst (돼지고기 소시지)와 각 운이 맞는 Ngatwurst라는 단어는 존재할 수 없다. 아프리카와 동아시아 언어들에서는 /ng/로 시작하는 단어에 대해서 전혀 문제삼지 않지만, 독일어 음운규칙에서는 이를 허용하지 않는다. 이것은 영어도 마찬가지로, 두 언어 모두 동일하게 특징으로 가지는 부분이다.</p>
+</div>
+  <div class="rectangle-4286"></div>
+  <div class="_04">04</div>
+  <div class="rectangle-4296"></div>
+  <div class="ng">/ng/ 발음</div>
+</div>
+</div>
+<div style="width:1728px;height: 2800px; background-color:#0047FF;
+display: flex; flex-direction: column; align-items: center">
+<p4>미국인 언어학자 타일러 스노블렌은 세계의 괴짜언어들을 평범한 언어들과 통계적으로 분리하였다. 이 작업을 위해서 그는 언어구조세계지도WALS, World<br> Atlas of Linguistic Structure (wals info)라는 데이터 베이스를 사용하였다. 고려된 언어적 특징에는 비모음의 유무 또는 주어, 목적어, 동사의 순서 등이<br> 
+있다. 239개의 단어의 지수를 터무니없이 특이한 경우 0점에서부터 지극히 평범한 경우 1점까지로 설정하였다. 마지막으로, 계산된 지수를 0점에서 1점까지<br> 
+순서대로,  괴짜 지수를 계산했다.  <span>그 결과, 독일어의 괴짜 지수는 0.144으로 세계 주요 언어 20개 중 1위를 차지했으며,  한국어는 11위를 차지했다.</span> </p4>
+<img src="freak.svg" style="padding-bottom: 100px;">
+<div class="first" style="background-color: #0047FF; width: 1728px; height: 160px; position: relative; padding-top: 100px;">
+<div class="hub002">괴짜 언어 독일어의<br>특이한 단어</div>
+    <div class="hub002-2">그렇다면, 실제로 사용되는 독일어에는 어떤 단어들이 있을까? 한 문장으로 그 뜻을 설명하기 어렵거나<br> 
+복잡하고 미묘한 뜻을 가진 독특하고 재미있는 독일어의 단어에 대해 알아보자.<br>화면을 옆으로 스크롤 해 확인할 수 있다.</div>
+</div>
+<div style="width: 100% height: 624px; overflow: scroll; justify-content: center;align-items: center;">
+<div class="wrap2">
+        <img src="dakel2.svg" alt="dakel2" class="scroll-image">
+    </div>   
+</section>
+<section id="footer">
+<img src="footer.svg" style="width:100%;height: auto;position: absolute;top: 11750px;right: 0px;"></section>
+</body>
+</html>
